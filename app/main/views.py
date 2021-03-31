@@ -4,6 +4,7 @@ from . forms import PitchForm, CommentForm, CategoryForm
 from .import main
 from .. import db
 from ..models import User, Pitch, Comments, PitchCategory, Votes
+from sqlalchemy import desc
 
 #display categories on the landing page
 @main.route('/')
@@ -13,7 +14,8 @@ def index():
     """
 
     all_category = PitchCategory.get_categories()
-    all_pitches = Pitch.query.order('id desc').all()
+    all_pitches = Pitch.query.order_by(desc(Pitch.id)).all()
+    #order_by(desc(Pitch.id))
     print(all_pitches)
 
     title = 'Home- Welcome'
