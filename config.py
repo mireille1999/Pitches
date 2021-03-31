@@ -27,7 +27,7 @@ class ProdConfig(Config):
         configuration settings
     """
     # pass
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL?sslmode=require')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')
     
 
 class DevConfig(Config):
