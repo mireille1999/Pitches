@@ -55,10 +55,8 @@ The users will submit their one minute pitches and other users will vote on them
 ## Technologies used
 * Python3
 * Flask
-* Javascript
-* Particle Js
-* Html5
-* Css3
+* Html
+* Css
 * Bootstrap4
 
 
@@ -115,7 +113,7 @@ After extracting the files,
 
 ## Live link 
 **You can view the project through this link**
-https://catepitch.herokuapp.com/
+
 
 
 ## License 
