@@ -13,3 +13,9 @@ ol.category-list {
     display: flex;
     justify-content: center;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #23374d;
+}
